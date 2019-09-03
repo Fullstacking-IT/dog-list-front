@@ -13,7 +13,7 @@ export const createDog = (name, breed, age) => {
 };
 
 export const getDog = () => {
-  return fetch('http://localhost:7891/api/v1/notes', {
+  return fetch('http://localhost:7891/api/v1/dog', {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json'
