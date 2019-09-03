@@ -5,8 +5,8 @@ function DogItem({ name, breed, age }) {
   return (
     <section>
       <h2>{name}</h2>
-      <h4>{breed}</h4>
-      <h4>{age}</h4>
+      <h4>breed: {breed}</h4>
+      <h4>age: {age}</h4>
     </section>
   );
 }

@@ -1,4 +1,4 @@
-import { CREATE_DOG, FETCH_DOGS, FETCH_DOGS_LOADING } from '../action/dogActions';
+import { FETCH_DOGS, FETCH_DOGS_LOADING, CREATE_DOG } from '../action/dogActions';
 
 const initialState = {
   dogs: [],

@@ -1,6 +1,13 @@
 import React from 'react';
+import AllDogs from '../containers/AllDogs';
+import CreateDog from '../containers/CreateDog';
+
 
 export default function App() {
-  return <h1>Hello World</h1>;
+  return (
+  <>
+  <CreateDog />
+  <AllDogs />
+  </>
+  );
 }
-  

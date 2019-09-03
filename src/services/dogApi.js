@@ -1,5 +1,5 @@
 export const createDog = (name, breed, age) => {
-  return fetch('http://localhost:7891/api/v1/dogs', {
+  return fetch('https://doggie-backend.herokuapp.com/api/v1/dogs', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -13,7 +13,7 @@ export const createDog = (name, breed, age) => {
 };
 
 export const getDog = () => {
-  return fetch('http://localhost:7891/api/v1/dog', {
+  return fetch('https://doggie-backend.herokuapp.com/api/v1/dogs', {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json'
