@@ -1,19 +1,19 @@
+import { CREATE_DOG, FETCH_DOGS, FETCH_DOGS_LOADING } from '../action/dogActions';
+
 const initialState = {
-  dog: {
-    name: '',
-    breed: '',
-    age: ''
-  },
+  dogs: [],
   loading: false,
   error: null
 };
 
 export default function reducer(state = initialState, action) {
   switch(action.type) {
-    case FETCH_DOG_LOADING:
+    case CREATE_DOG:
+      return { ...state, loading: false, dogs:[...state.dogs, action.payload] };
+    case FETCH_DOGS_LOADING:
       return { ...action, loading: true };
-    case FETCH_DOG:
-      return { ...state, loading: false, error: null, dog: action.payload };
+    case FETCH_DOGS:
+      return { ...state, loading: false, error: null, dogs: action.payload };
     default:
       return state;
   }
