@@ -2,7 +2,7 @@ const initialState = {
   dog: {
     name: '',
     breed: '',
-    age: 0
+    age: ''
   },
   loading: false,
   error: null
