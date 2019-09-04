@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import DogItem from './DogItem';
+import styles from './DogList.css';
 
 function DogList({ dogs }) {
   const dogList = dogs.map(dog => {
@@ -11,7 +12,7 @@ function DogList({ dogs }) {
     );
   });
   return (
-    <ul>
+    <ul className={styles.DogList}>
       {dogList}
     </ul>
   );

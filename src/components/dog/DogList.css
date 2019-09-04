@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Galada|Nixie+One&display=swap');
+
+.DogList {
+  list-style: none;
+  font-family: 'Nixie One', cursive;
+  border: #393F46 1px solid;
+  display: flex;
+
+  h2 {
+    font-family: 'Galada', cursive;
+    color: #393F46;
+
+  }
+}

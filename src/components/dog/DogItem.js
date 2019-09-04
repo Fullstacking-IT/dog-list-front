@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+
 function DogItem({ name, breed, age }) {
   return (
     <section>
